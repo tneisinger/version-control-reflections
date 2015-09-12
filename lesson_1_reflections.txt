@@ -1,0 +1,55 @@
+how did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+Diffing a file allows me to instantly see the differences between two files.
+When diffing a file with an older version of that file, I can see exactly
+which lines are different between the two files.  When trying to figure out
+why one code file is behaving differently than another code file, seeing the
+differences between the files can help me quickly discover why two versions
+of the same code behave differently.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+If I make changes that turn out to be a mistake, being able to go back to old
+versions would be a great tool.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like
+Google Docs does?
+
+With manual commits, I can control how my changes are grouped together.  This
+allows for logical chunks of changes to be organized into individual commits.
+If versions were automatically saved, the individual versions probably
+wouldn't work correctly.  Manual commits are the right way to go for code.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file
+separately?
+
+In some cases, it makes sense to track individual files separately. But when
+files are dependent on eachother, it makes more sense to take a snapshot of
+all the files involved. In coding projects involving more than one file, it is
+likely that tracking the history of all the files at once is a better idea.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Git log shows the history of all the commits that have been made on the given
+repository.  By using the IDs from two different commits, I can use the git
+diff command to see the exact differences between those two commits.  This
+could be very handy when troubleshooting, or just when you want to see which
+exact lines of code are responsible for the different behaviors of two
+versions of the same project.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+With git commits, I can make changes without worrying that I won't be able to
+go back to an older version of my code that worked correctly.  And, if I do
+break something, I can use git diff to see exactly which lines of code caused
+the problems.  Git is cool!
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use git for all of my programming projects.  I just wish I was more
+desciplined in using it.  Hopefully taking this course can help me do that!
