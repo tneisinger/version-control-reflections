@@ -14,3 +14,47 @@ the repository because a repository because a repository is designed to track
 the changes in files in the current working directory over numerous commits.
 The staging area is only used to designate which files should be included in a
 single commit.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+The staging area allows me to select exactly which files I want to include in
+a given commit.  This allows me to break up my commits into logical steps in
+the development process.
+
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+Branches will allow me to create different versions of the same project, and
+give me the ability to label those different branches with an informative
+name.  This will remove much of the anxiety of trying new or experimental
+things in my projects.  Thanks git!
+
+How do the diagrams help you visualize the branch structure?
+
+Branches and commits can get complicated.  Creating a diagram will make it
+easier to see how different branches and their commits are related to one
+another.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+Merging to branches takes all the changes from each branch and merges them
+together into one commit, and into one of the two branches.  In a diagram, you
+would represent a merge of two branches as a new commit node with arrows
+pointing back to the last commit on the two merged branches.  The arrows
+indicate that the merge commit has two parent commits.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Automatic merging is great, but git can't always auto-merge.  If there are
+changes to the same parts of a file in both branches, merging cannot be done
+automatically.  Fortunately, git warns the user when there are merge
+conflicts, and allows the user the fix the conflicts.  If there is a merge
+conflict, you must go into the files that contain the conflicts and make
+the appropriate changes.  Git adds annotations to the files, and provides
+the relavant sections from each branch, as well as the original section from
+before the two branches split off.  The user must manually edit the file and
+resolve the conflicts, removing all the annotations that git provided.  After
+that, finish the commit to complete the merge.
