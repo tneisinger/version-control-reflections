@@ -1,0 +1,6 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+Using a remote repository is a great idea for a few reasons. First, having a second copy
+of my work stored somewhere else protects my work from hard drive crashes or other
+disasters.  Second, it can make collaboration much simpler. By making my work available
+online, it will be much easier for others to collaborate with me.
